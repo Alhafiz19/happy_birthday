@@ -29,8 +29,8 @@ h1, h2 {
 /* Page 1: Love Border Image */
 .heart-border-container {
     background: linear-gradient(45deg, #ff4d6d, #ffb3c6);
-    width: 220px;
-    height: 200px;
+    width: 420px;
+    height: 400px;
     margin: 0 auto 20px auto;
     display: flex;
     justify-content: center;
