@@ -46,6 +46,7 @@ h1, h2 {
     /* This cuts the image into a slightly smaller heart to show the pink border */
     clip-path: url(#heart-clip);
     border: none; 
+    object-position: center top;
 }
 
 /* Inputs and Buttons */
