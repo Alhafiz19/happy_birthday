@@ -29,24 +29,23 @@ h1, h2 {
 /* Page 1: Love Border Image */
 .heart-border-container {
     background: linear-gradient(45deg, #ff4d6d, #ffb3c6);
-    width: 420px;
-    height: 400px;
+    width: 320px;  /* Fits perfectly inside the white card */
+    height: 300px;
     margin: 0 auto 20px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* This cuts the pink background into a heart */
+    position: relative; /* This is the magic rule that stops the squishing */
     clip-path: url(#heart-clip); 
 }
 
 .profile-img {
-    width: 400px;
-    height: 380px;
+    position: absolute; /* Takes the image out of the squishy layout */
+    top: 15px;    /* Creates a perfect 15px pink border at the top */
+    left: 15px;   /* Creates a perfect 15px pink border on the sides */
+    width: 290px; /* Exactly 30px smaller than the container */
+    height: 270px;/* Exactly 30px smaller than the container */
     object-fit: cover;
-    /* This cuts the image into a slightly smaller heart to show the pink border */
+    object-position: center top;
     clip-path: url(#heart-clip);
     border: none; 
-    object-position: center top;
 }
 
 /* Inputs and Buttons */
