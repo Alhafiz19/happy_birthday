@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bg-music" loop>
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="login-page" class="page-container">
+        <div class="heart-border-container">
+            <img src="image1.jpg" alt="My Love" class="profile-img">
+        </div>
+        <h1>Enter Our Special Date</h1>
+        <p>Format: DD.MM.YY</p>
+        <input type="text" id="password" placeholder="02.07.03">
+        <button onclick="checkPassword()">Unlock Birthday Wishes</button>
+        <p id="error-message" style="color: red; display: none;">Oops! Try again.</p>
+    </div>
+
+    <div id="brochure-page" class="page-container" style="display: none;">
+        
+        <div class="slider-container">
+            <div class="slide active">
+                <h2>Happy Birthday! ❤️</h2>
+                <img src="image1.jpg" alt="Memory 1">
+                <p>Wishing the most amazing person the happiest of birthdays. You mean everything to me!</p>
+            </div>
+            
+            <div class="slide">
+                <h2>My Favorite Memories</h2>
+                <img src="image2.jpg" alt="Memory 2">
+                <p>Every moment with you is a treasure. Here is to making many more beautiful memories together.</p>
+            </div>
+
+            <div class="slide">
+                <h2>I Love You!</h2>
+                <img src="image3.jpg" alt="Memory 3">
+                <p>Enjoy your special day, my love. You deserve all the happiness in the world.</p>
+            </div>
+
+            <div class="controls">
+                <button onclick="changeSlide(-1)">Previous</button>
+                <button onclick="changeSlide(1)">Next</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
