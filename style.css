@@ -243,3 +243,47 @@ button:hover {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+/* --- Cute Brochure Buttons --- */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds perfect space between the two buttons */
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.nav-btn {
+    background-color: white;
+    color: #ff4d6d;
+    border: 2px solid #ffb3c6;
+    border-radius: 25px; /* Makes them cute pill shapes */
+    padding: 8px 25px;
+    font-weight: 600;
+    flex: 1; /* Makes both buttons the exact same size */
+    max-width: 140px;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #ffb3c6;
+    color: white;
+}
+
+.gallery-btn {
+    background: linear-gradient(45deg, #ff4d6d, #ffb3c6);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4); /* Soft pink glow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-btn:hover {
+    transform: translateY(-3px); /* Cute little lift effect when hovered */
+    box-shadow: 0 6px 20px rgba(255, 77, 109, 0.6);
+}
