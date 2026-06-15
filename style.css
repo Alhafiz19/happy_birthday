@@ -182,3 +182,64 @@ button:hover {
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
     z-index: 10;
 }
+/* --- Floating Music Player --- */
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(255, 105, 135, 0.3);
+    /* Flexbox will be activated by JS when unlocked */
+    align-items: center;
+    gap: 15px;
+    z-index: 1000; /* Stays on top of all pages! */
+    border: 2px solid #ffb3c6;
+}
+
+.disk {
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(45deg, #ff4d6d, #ffb3c6);
+    border-radius: 50%;
+    position: relative;
+    animation: spin 3s linear infinite;
+}
+
+/* The white hole in the middle of the record */
+.disk::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+}
+
+.music-info p {
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    color: #ff4d6d;
+    font-weight: bold;
+}
+
+#play-pause-btn {
+    background: none;
+    border: none;
+    color: #c9184a;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
