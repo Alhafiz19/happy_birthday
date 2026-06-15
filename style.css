@@ -291,3 +291,36 @@ button:hover {
     transform: translateY(-3px); /* Cute little lift effect when hovered */
     box-shadow: 0 6px 20px rgba(255, 77, 109, 0.6);
 }
+/* --- Floral Background Decor --- */
+.bg-flower {
+    position: fixed;
+    z-index: -1; /* This is the magic rule that pushes them BEHIND the brochure */
+    width: 280px; /* Makes the flowers nice and big */
+    opacity: 0.7; /* Makes them slightly faded so they blend into the pink background */
+    pointer-events: none; /* Stops them from interfering if she clicks near the edge */
+}
+
+/* Positioning each flower in the corners */
+.top-left { 
+    top: -30px; 
+    left: -30px; 
+    transform: rotate(-25deg); 
+}
+
+.top-right { 
+    top: -30px; 
+    right: -30px; 
+    transform: rotate(35deg) scaleX(-1); /* Flips it so it faces inward */
+}
+
+.bottom-left { 
+    bottom: -30px; 
+    left: -30px; 
+    transform: rotate(-110deg); 
+}
+
+.bottom-right { 
+    bottom: -30px; 
+    right: -30px; 
+    transform: rotate(145deg); 
+}
