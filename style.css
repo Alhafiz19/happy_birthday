@@ -324,17 +324,17 @@ button:hover {
     right: -30px; 
     transform: rotate(145deg); 
 }
-/* The 2 Side Flowers (Moved to hug the brochure) */
+/* The 2 Side Flowers (Tucked right next to the card) */
 .mid-left {
     top: 50%; 
-    left: 50%; 
-    margin-left: -350px; /* Pulls it right next to the left side of the card */
+    /* This finds the exact dead center, then walks exactly 350px to the left */
+    left: calc(50% - 350px); 
     transform: translateY(-50%) rotate(45deg) scale(0.8); 
 }
 
 .mid-right {
     top: 50%; 
-    right: 50%;
-    margin-right: -350px; /* Pulls it right next to the right side of the card */
+    /* This finds the exact dead center, then walks exactly 350px to the right */
+    right: calc(50% - 350px); 
     transform: translateY(-50%) rotate(-60deg) scale(0.7); 
 }
