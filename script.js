@@ -9,6 +9,9 @@ function checkPassword() {
         document.getElementById("login-page").style.display = "none";
         document.getElementById("brochure-page").style.display = "block";
         
+        // ADD THIS NEW LINE: Show the music player
+        document.getElementById("music-player").style.display = "flex";
+        
         // Play the music!
         audio.play().catch(error => {
             console.log("Audio play failed:", error);
