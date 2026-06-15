@@ -328,14 +328,14 @@ button:hover {
 .mid-left {
     top: 50%; 
     /* This finds the exact dead center, then walks exactly 350px to the left */
-    left: calc(50% - 400px); 
+    left: calc(50% - 440px); 
     transform: translateY(-50%) rotate(45deg) scale(0.8); 
 }
 
 .mid-right {
     top: 50%; 
     /* This finds the exact dead center, then walks exactly 350px to the right */
-    right: calc(50% - 400px); 
+    right: calc(50% - 440px); 
     transform: translateY(-50%) rotate(-60deg) scale(0.7); 
 }
 /* The 2 Center Flowers (Top and Bottom) */
