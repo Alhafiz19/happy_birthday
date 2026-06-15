@@ -338,3 +338,17 @@ button:hover {
     right: calc(50% - 400px); 
     transform: translateY(-50%) rotate(-60deg) scale(0.7); 
 }
+/* The 2 Center Flowers (Top and Bottom) */
+.top-mid {
+    top: -50px; /* Tucked slightly off the top edge */
+    left: 50%;
+    /* Centers it perfectly and rotates it to point downward */
+    transform: translateX(-50%) rotate(165deg) scale(0.85); 
+}
+
+.bottom-mid {
+    bottom: -50px; /* Tucked slightly off the bottom edge */
+    left: 50%;
+    /* Centers it perfectly and rotates it to point upward */
+    transform: translateX(-50%) rotate(-15deg) scale(0.85); 
+}
