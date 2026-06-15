@@ -40,3 +40,16 @@ function changeSlide(direction) {
     // Add 'active' class to new slide
     slides[currentSlideIndex].classList.add("active");
 }
+
+// --- Gallery Logic ---
+function showGallery() {
+    document.getElementById("brochure-page").style.display = "none";
+    document.getElementById("gallery-page").style.display = "block";
+    window.scrollTo(0, 0); // Always start at the top of the gallery
+}
+
+function backToBrochure() {
+    document.getElementById("gallery-page").style.display = "none";
+    document.getElementById("brochure-page").style.display = "block";
+    window.scrollTo(0, 0);
+}
