@@ -324,3 +324,15 @@ button:hover {
     right: -30px; 
     transform: rotate(145deg); 
 }
+/* The 2 Side Flowers */
+.mid-left {
+    top: 40%; /* Places it in the middle of the screen vertically */
+    left: -50px; /* Tucks it slightly off-screen */
+    transform: rotate(45deg) scale(0.8); /* Makes it slightly smaller so it doesn't fight the corners */
+}
+
+.mid-right {
+    top: 50%; 
+    right: -50px;
+    transform: rotate(-60deg) scale(0.7); 
+}
