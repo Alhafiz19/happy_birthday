@@ -74,13 +74,17 @@ button:hover {
     background-color: #c9184a;
 }
 
-/* Page 2: Brochure Slider */
+/* Page 2: Brochure Slider Images */
 .slider-container img {
-    width: 100%;
+    width: 90%; /* Keeps it slightly away from the edges */
+    max-width: 300px; /* Prevents it from getting too huge */
     height: 250px;
     object-fit: cover;
     border-radius: 15px;
-    margin-bottom: 15px;
+    
+    /* THESE TWO LINES FORCE IT TO CENTER: */
+    display: block; 
+    margin: 0 auto 15px auto; 
 }
 
 .slide {
