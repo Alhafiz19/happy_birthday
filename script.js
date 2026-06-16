@@ -56,3 +56,16 @@ function backToBrochure() {
     document.getElementById("brochure-page").style.display = "block";
     window.scrollTo(0, 0);
 }
+// --- Final Wishes Logic ---
+function showWishes() {
+    document.getElementById("gallery-page").style.display = "none";
+    // We use "flex" instead of "block" to keep the card perfectly centered
+    document.getElementById("wishes-page").style.display = "flex"; 
+    window.scrollTo(0, 0);
+}
+
+function backToGallery() {
+    document.getElementById("wishes-page").style.display = "none";
+    document.getElementById("gallery-page").style.display = "block";
+    window.scrollTo(0, 0);
+}
