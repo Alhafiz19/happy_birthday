@@ -352,3 +352,72 @@ button:hover {
     /* Centers it perfectly and rotates it to point upward */
     transform: translateX(-50%) rotate(-15deg) scale(0.85); 
 }
+/* --- Page 4: Final Wishes Page --- */
+#wishes-page {
+    /* Overrides the default full-screen-page to center the card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Stops the scattered images from creating scrollbars */
+    z-index: 200; 
+}
+
+/* The Frosted Glass Text Card */
+.wishes-card {
+    background: rgba(255, 255, 255, 0.85); /* Slightly see-through */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 105, 135, 0.4);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    z-index: 10; /* Keeps the text ON TOP of the background images */
+    border: 3px solid #ffb3c6;
+    backdrop-filter: blur(5px); /* Creates a cool frosted glass effect */
+}
+
+.wishes-card p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* The Scattered Background Images */
+.scattered-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Pushes them to the background */
+    pointer-events: none; /* Stops her from accidentally clicking them */
+}
+
+.bg-img {
+    position: absolute;
+    width: 130px; /* Small cute size */
+    height: 130px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    opacity: 0.4; /* FADES THEM so they don't overpower your text! */
+}
+
+/* Hard-coding 14 random positions and tilts */
+.pos-1 { top: 5%; left: 5%; transform: rotate(-15deg); }
+.pos-2 { top: 10%; right: 10%; transform: rotate(20deg); }
+.pos-3 { bottom: 15%; left: 8%; transform: rotate(-10deg); }
+.pos-4 { bottom: 5%; right: 5%; transform: rotate(15deg); }
+.pos-5 { top: 40%; left: -20px; transform: rotate(-25deg); }
+.pos-6 { top: 50%; right: -10px; transform: rotate(30deg); }
+.pos-7 { top: -30px; left: 40%; transform: rotate(10deg); }
+.pos-8 { bottom: -30px; right: 40%; transform: rotate(-15deg); }
+.pos-9 { top: 20%; left: 25%; transform: rotate(5deg); }
+.pos-10 { top: 25%; right: 25%; transform: rotate(-8deg); }
+.pos-11 { bottom: 30%; left: 20%; transform: rotate(12deg); }
+.pos-12 { bottom: 25%; right: 20%; transform: rotate(-18deg); }
+.pos-13 { top: 60%; left: 15%; transform: rotate(-20deg); }
+.pos-14 { top: 70%; right: 15%; transform: rotate(22deg); }
