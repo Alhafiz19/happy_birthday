@@ -397,13 +397,13 @@ button:hover {
 
 .bg-img {
     position: absolute;
-    width: 130px; /* Small cute size */
-    height: 130px;
+    width: 200px;  /* Increased from 130px! */
+    height: 200px; /* Increased from 130px! */
     object-fit: cover;
     border-radius: 12px;
     border: 4px solid white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    opacity: 0.4; /* FADES THEM so they don't overpower your text! */
+    opacity: 0.6; /* Keeps them faded so she can still read your text */
 }
 
 /* Hard-coding 14 random positions and tilts */
