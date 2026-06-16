@@ -421,12 +421,12 @@ button:hover {
 .pos-12 { bottom: 25%; right: 20%; transform: rotate(-18deg); }
 .pos-13 { 
     bottom: 10px; /* Pulls it up from the bottom edge */
-    left: 15%; 
+    left: 20%; 
     transform: rotate(-20deg); 
 }
 
 .pos-14 { 
     bottom: 10px; /* Pulls it up from the bottom edge */
-    right: 15%; 
+    right: 20%; 
     transform: rotate(22deg); 
 }
