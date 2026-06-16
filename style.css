@@ -419,5 +419,5 @@ button:hover {
 .pos-10 { top: 25%; right: 20%; transform: rotate(-8deg); }
 .pos-11 { bottom: 30%; left: 20%; transform: rotate(12deg); }
 .pos-12 { bottom: 25%; right: 20%; transform: rotate(-18deg); }
-.pos-13 { bottom: -30%; left: 20%; transform: rotate(-20deg); }
-.pos-14 { bottom: -40%; right: 20%; transform: rotate(22deg); }
+.pos-13 { bottom: -20%; left: 20%; transform: rotate(-20deg); }
+.pos-14 { bottom: -20%; right: 20%; transform: rotate(22deg); }
