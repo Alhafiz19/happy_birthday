@@ -12,15 +12,30 @@ function checkPassword() {
         // ADD THIS NEW LINE: Show the music player
         document.getElementById("music-player").style.display = "flex";
         
+        // ADD THIS NEW LINE: Show the music player
+        document.getElementById("music-player").style.display = "flex";
+
         // Grab the audio element
         const audio = document.getElementById("bg-music");
         
-        // ADD THIS LINE: Start the song at exactly 45 seconds
-        audio.currentTime = (1 * 60) + 32; 
+        // 1. Set where the song starts the VERY FIRST time she loads the page (e.g., 0 seconds)
+        const firstPlayTime = (1 * 60) + 32; 
+        
+        // 2. Set where the song loops back to (Your custom time of 1 min 32 sec)
+        const loopBackTime = 18; 
+        
+        // Start the song at the first play time
+        audio.currentTime = firstPlayTime; 
         
         // Play the music!
         audio.play().catch(error => {
             console.log("Audio play failed:", error);
+        });
+
+        // 3. The Custom Loop: Listens for the song to end, then jumps to 1:32 and replays
+        audio.addEventListener("ended", function() {
+            audio.currentTime = loopBackTime;
+            audio.play();
         });
     } else {
         // Show error
