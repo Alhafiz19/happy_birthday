@@ -12,6 +12,12 @@ function checkPassword() {
         // ADD THIS NEW LINE: Show the music player
         document.getElementById("music-player").style.display = "flex";
         
+        // Grab the audio element
+        const audio = document.getElementById("bg-music");
+        
+        // ADD THIS LINE: Start the song at exactly 45 seconds
+        audio.currentTime = (1 * 60) + 32; 
+        
         // Play the music!
         audio.play().catch(error => {
             console.log("Audio play failed:", error);
