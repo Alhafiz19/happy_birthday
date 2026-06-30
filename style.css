@@ -352,6 +352,31 @@ button:hover {
     /* Centers it perfectly and rotates it to point upward */
     transform: translateX(-50%) rotate(-15deg) scale(0.85); 
 }
+
+/* --- The 4 New Inner Flowers --- */
+.top-inner-left {
+    top: -20px; /* Tucked slightly off the top */
+    left: 22%; /* Pushes it exactly into that top-left gap */
+    transform: rotate(-45deg) scale(0.8); /* Slightly smaller than the corners */
+}
+
+.top-inner-right {
+    top: -20px; 
+    right: 22%; /* Pushes it exactly into that top-right gap */
+    transform: rotate(60deg) scale(0.8); 
+}
+
+.bottom-inner-left {
+    bottom: -20px; /* Tucked slightly off the bottom */
+    left: 22%; 
+    transform: rotate(-135deg) scale(0.8); 
+}
+
+.bottom-inner-right {
+    bottom: -20px; 
+    right: 22%; 
+    transform: rotate(120deg) scale(0.8); 
+}
 /* --- Page 4: Final Wishes Page --- */
 #wishes-page {
     /* Overrides the default full-screen-page to center the card */
