@@ -431,3 +431,18 @@ button:hover {
     right: 20%; 
     transform: rotate(22deg); 
 }
+/* --- Button and Cat Layout --- */
+.button-cat-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+    margin-top: 15px; 
+}
+
+.tiny-cat {
+    width: 65px; 
+    height: 65px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)); 
+}
