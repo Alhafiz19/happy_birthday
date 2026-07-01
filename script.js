@@ -22,7 +22,7 @@ function checkPassword() {
         const firstPlayTime = (1 * 60) + 33; 
         
         // 2. Set where the song loops back to (Your custom time of 1 min 32 sec)
-        const loopBackTime = 20; 
+        const loopBackTime = (1 * 60) + 33; 
         
         // Start the song at the first play time
         audio.currentTime = firstPlayTime; 
