@@ -19,10 +19,10 @@ function checkPassword() {
         const audio = document.getElementById("bg-music");
         
         // 1. Set where the song starts the VERY FIRST time she loads the page (e.g., 0 seconds)
-        const firstPlayTime = (1 * 60) + 32; 
+        const firstPlayTime = (1 * 60) + 33; 
         
         // 2. Set where the song loops back to (Your custom time of 1 min 32 sec)
-        const loopBackTime = 18; 
+        const loopBackTime = 20; 
         
         // Start the song at the first play time
         audio.currentTime = firstPlayTime; 
